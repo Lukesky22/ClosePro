@@ -1,0 +1,49 @@
+<section class="section" id="labourSection">
+  <h2>Main-d'œuvre</h2>
+
+  <h3>Chantier</h3>
+  <button onclick="addChantierRow()" class="btn btn-primary">+ Ajouter ligne chantier</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Heures</th>
+        <th>Taux horaire</th>
+        <th>Sous-total</th>
+        <th>Supprimer</th>
+      </tr>
+    </thead>
+    <tbody id="chantierTableBody"></tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" style="text-align:right;"><strong>Sous-total chantier :</strong></td>
+        <td colspan="2" id="chantierTotal">0.00 $</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h3>Administratif</h3>
+  <button onclick="addAdminRow()" class="btn btn-secondary">+ Ajouter ligne administrative</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Heures</th>
+        <th>Taux horaire</th>
+        <th>Sous-total</th>
+        <th>Supprimer</th>
+      </tr>
+    </thead>
+    <tbody id="adminTableBody"></tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" style="text-align:right;"><strong>Sous-total administratif :</strong></td>
+        <td colspan="2" id="adminTotal">0.00 $</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div style="text-align:right; font-weight:bold; margin-top:1em">
+    Total global : <span id="labourGlobalTotal">0.00 $</span>
+  </div>
+</section>

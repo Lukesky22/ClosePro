@@ -1,0 +1,39 @@
+<div class="section">
+    <h2>Section Chauffage</h2>
+    <button id="addheatingBtn">+ Ajouter équipement de Chauffage</button> 
+
+
+    <div id="heatingForm" style="display:none; margin-top: 1em;">
+        <input type="text" id="heatingTag" placeholder="Tag">
+        <input type="text" id="heatingDes" placeholder="Description">
+        <input type="text" id="heatingspec" placeholder="Spécification">
+        <input type="text" id="heatingqty" placeholder="Quantité">
+        <input type="text" id="heatingUni" placeholder="Unité/Lot">
+        <input type="number" id="heatingHeure" placeholder="Heures">
+
+        <input type="text" id="Hsupplier1" placeholder="Fournisseur 1 nom">
+        <input type="number" id="Hprice1" placeholder="Prix 1">
+
+        <input type="text" id="Hsupplier2" placeholder="Fournisseur 2 nom">
+        <input type="number" id="Hprice2" placeholder="Prix 2">
+
+        <button id="submitheating">Ajouter</button>
+    </div>
+    <table id="heatingtable" style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Spécification</th>
+                <th>Quantité</th>
+                <th>Unité/Lot</th>
+                <th>Fournisseur</th>
+                <th>Prix ($)</th>
+                <th>Total ($)</th>
+                <th>Heures (plomberie)</th>
+                <th>Comparer</th>
+            </tr>
+        </thead>
+        <tbody id="tbheating"></tbody>
+    </table>
+</div>

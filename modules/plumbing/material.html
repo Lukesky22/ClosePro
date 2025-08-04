@@ -1,0 +1,54 @@
+<div class="material-section">
+    <h2>Section Matériaux</h2>
+
+    <div class="form-grid">
+        <input type="text" id="sector" placeholder="Secteur" />
+        <input list="materialTypes" id="product" class="form-control" placeholder="Matériel">
+        <datalist id="materialTypes">
+            <option value="ABS-DWV">
+            <option value="Acier d’Amérique">
+            <option value="Stainless Steel">
+            <option value="CPVC">
+            <option value="cuivre">
+            <option value="Fibrociment">
+            <option value="Fonte">
+            <option value="Holdrite">
+            <option value="Laiton">
+            <option value="PEX">
+            <option value="PVC">
+            <option value="Soupapes">
+            <option value="Supports">
+            <option value="UPONOR/WIRSBO">
+            <option value="Victaulic">
+            <option value="Viega">
+            <option value="TBC">
+        </datalist>
+        <input type="number" id="quantity" placeholder="Quantité" />
+        <input type="number" id="unitPrice" placeholder="Prix unitaire ($)" />
+        <input type="number" id="discount" placeholder="% Rabais" />
+        <input type="number" id="AUgmentation" placeholder="% Majoration"/>
+        <input type="number" id="labor" placeholder="Heures" />
+        <button id="addMaterialBtn" class="btn">+ Ajouter</button>
+    </div>
+
+    <p>Total: <span id="materialTotal">0.00</span> $</p>
+
+    <table class="material-table">
+        <thead>
+            <tr>
+                <th>Secteur</th>
+                <th>Produit</th>
+                <th>Quantité</th>
+                <th>Prix $</th>
+                <th>Total $</th>
+                <th>Rabais</th>
+                <th>Majoration</th>
+                <th>Main-d'œuvre</th>
+                <th>Total Main-d'œuvre</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody id="materialTableBody"></tbody>
+    </table>
+</div>
+

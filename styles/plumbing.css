@@ -1,0 +1,113 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f9fc;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h2 {
+  color: #1d4e89;
+  margin-bottom: 20px;
+}
+
+/* === TABLEAU PRINCIPAL === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #1d4e89;
+  color: white;
+}
+
+thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) td {
+  background-color: #f1f7fb;
+}
+
+/* === BOUTONS === */
+button {
+  padding: 6px 12px;
+  background-color: #1d4e89;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #163f6c;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  margin-left: 8px;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+/* === ZONE DE COMPARAISON === */
+.compare-box {
+  display: flex;
+  gap: 30px;
+  padding: 15px;
+  background-color: #eef5fb;
+  border: 1px solid #cddfec;
+  margin-top: 5px;
+}
+
+.compare-box > div {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #c1d4ea;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.compare-box > div.selected {
+  background-color: #d7f0df;
+  border: 2px solid #2ecc71;
+}
+
+/* === FORMULAIRE AJOUT === */
+#equipmentForm {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+#equipmentForm label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+#equipmentForm input,
+#equipmentForm select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

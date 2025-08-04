@@ -1,0 +1,28 @@
+<!-- depenses.html -->
+<section class="section" id="siteExpenses">
+  <h2>Dépenses chantier</h2>
+
+  <button onclick="addExpenseRow()" class="btn btn-primary">+ Ajouter une dépense</button>
+  <button onclick="resetExpenses()" class="btn btn-secondary">↺ Réinitialiser</button>
+
+  <table class="table" id="expenseTable">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Valeur</th>
+        <th>Unité</th>
+        <th>Sous-total</th>
+        <th>Supprimer</th>
+      </tr>
+    </thead>
+    <tbody id="expenseTableBody">
+      <!-- Rows will be injected by JS -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" style="text-align:right;"><strong>Total des dépenses :</strong></td>
+        <td colspan="2" id="expenseTotal">0.00 $</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>

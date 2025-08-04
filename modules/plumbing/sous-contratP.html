@@ -1,0 +1,41 @@
+<div class="subcontract-section section">
+  <h2>Section Sous-Contrat</h2>
+
+  <!-- Formulaire d'ajout -->
+  <div class="form-grid">
+    <input type="text" id="subTag" placeholder="Identification">
+    <input type="text" id="subDesc" placeholder="Description">
+    <input type="text" id="subSpec" placeholder="Spécification">
+    <input type="number" id="subQty" placeholder="Quantité">
+    <input type="text" id="subUnit" placeholder="Unité/Lot">
+
+    <input type="text" id="subSupplier1" placeholder="Fournisseur 1">
+    <input type="number" id="subPrice1" placeholder="Prix 1">
+
+    <input type="text" id="subSupplier2" placeholder="Fournisseur 2">
+    <input type="number" id="subPrice2" placeholder="Prix 2">
+
+    <input type="text" id="subSupplier3" placeholder="Fournisseur 3">
+    <input type="number" id="subPrice3" placeholder="Prix 3">
+  </div>
+
+  <button id="addSubcontractBtn">+ Ajouter Sous-Contrat</button>
+
+  <!-- Tableau -->
+  <table class="material-table">
+    <thead>
+      <tr>
+        <th>Identification</th>
+        <th>Description</th>
+        <th>Spécification</th>
+        <th>Qté</th>
+        <th>Unité</th>
+        <th>Soumissions reçues</th>
+        <th>Fournisseur sélectionné</th>
+        <th>Prix sélectionné</th>
+        <th>Supprimer</th>
+      </tr>
+    </thead>
+    <tbody id="subcontractTableBody"></tbody>
+  </table>
+</div>
